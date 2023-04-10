@@ -24,8 +24,8 @@ class Booking(webdriver.Chrome):
         self.driver.maximize_window()
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-            if(self.tearDown):
-                self.driver.quit()
+            # if(self.tearDown):
+            self.driver.quit()
 
     def land_first_page(self):
         self.driver.get(const.BASE_URL)
